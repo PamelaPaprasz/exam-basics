@@ -35,6 +35,9 @@ class Deck(Card):
         random.shuffle(self.card_list)
         
     def draw(self):
+        top_card = self.card_list[0]
+        self.card_list.remove(top_card)
+        return top_card
         
 
 card =  Card()
