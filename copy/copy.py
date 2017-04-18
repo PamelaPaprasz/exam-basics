@@ -10,16 +10,28 @@
 import sys
 
 def inputs():
-    if len(sys.argv) == 1:
-        print('copy [source] [destination]')
-    elif len(sys.argv) == 2:
-        print('No destination provided')
-    else:
-        pass
-        
-        
-def copy_paste():
-    original_file = open(sys.argv[2])
+    try:
+        if len(sys.argv) == 1:
+            print('copy [source] [destination]')
+        elif len(sys.argv) == 3:
+            print('No destination provided')
+        else:
+            copy_paste()
+                
+        def copy_paste():
+            from_file = open(sys.argv[2], 'r')
+            from_data = from_file.read()
+            
+            to_file = open(sys.argv[3], 'r')
+            to_data = to_file.read()
+            
+            from_file.close()
+            to_file.close()
+    
+    except FileNotFoundError:
+        print('File not found.')
+    
+    
 
 inputs()
             
