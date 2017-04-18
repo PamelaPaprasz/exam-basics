@@ -10,6 +10,20 @@
 # We should be able to draw the top card which returns the drawn card and also removes it from the deck
 # Deck should be represented as string in this format:
 # 12 cards -  3 Clubs, 3 Diamonds, 3 Hearts, 3 Spades
+
+class Card():
+    def __init__(self):
+        self.value = value
+        self.color = color
+        
+class Deck(Card):
+    card_list = []
+    
+    def __init__(self, number):
+        self.number = number
+        
+        if number > 4
+
 deck = Deck(12)
 print(deck)
 # Should print out:
