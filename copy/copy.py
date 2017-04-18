@@ -18,17 +18,15 @@ def inputs():
         else:
             copy_paste()
                 
-        def copy_paste():
-            with open(sys.argv[2]) as f:
-                with open(sys.argv[3]) as f1:
-                    for line in f:
-                        f1.write(line)
-                
     except FileNotFoundError:
         print('File not found.')
-    
-    
-
+            
+def copy_paste():
+    with open(sys.argv[2]) as f:
+        with open(sys.argv[3]) as f1:
+            for line in f:
+                f1.write(line)
+            
 inputs()
             
 
