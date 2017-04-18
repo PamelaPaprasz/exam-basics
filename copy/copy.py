@@ -19,15 +19,11 @@ def inputs():
             copy_paste()
                 
         def copy_paste():
-            from_file = open(sys.argv[2], 'r')
-            from_data = from_file.read()
-            
-            to_file = open(sys.argv[3], 'r')
-            to_data = to_file.read()
-            
-            from_file.close()
-            to_file.close()
-    
+            with open(sys.argv[2]) as f:
+                with open(sys.argv[3]) as f1:
+                    for line in f:
+                        f1.write(line)
+                
     except FileNotFoundError:
         print('File not found.')
     
