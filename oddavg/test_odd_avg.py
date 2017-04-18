@@ -12,7 +12,7 @@ class TestOddAvg(unittest.TestCase):
         self.assertEqual(odd_avg.odd_average([6]), 0)
     
     def test_result_float(self):
-        self.assertEqual(odd_avg.odd_average([1, 4, 7, 2, 5, 3, 5, 3]), 4.16)
+        self.assertEqual(odd_avg.odd_average([1, 4, 7, 2, 5, 3, 5, 3, 1]), 3.5714285714285716)
     
 
 if __name__ == '__main__':
