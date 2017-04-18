@@ -35,8 +35,8 @@ The application is accepted if:
 ![anatomy](anatomy/anatomy_py.png)
 
 #### Your answer:
-[add your answer here]   
-1:   this is the keyword that defines the method
+ 
+1:   def is the keyword that defines the method
 2:   name of the method
 3:   argument of the method
 4:   the algorithm that the method supposed to do
@@ -46,4 +46,4 @@ The application is accepted if:
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+Constructor is the __init__ method that contains all the variables we want to be created immediately when we instantiates a class. If we wanna define an initialization method, this should be the first method we define when we create our class.
