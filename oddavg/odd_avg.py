@@ -5,13 +5,14 @@
 def odd_average(numbers):
     
     odd_numbers = []
+    sum_odds = 0
     
     for number in numbers:
         if number %2 != 0:
             odd_numbers.append(number)
     
-    length_of_odds = len(odd_numbers)
-            
-    
-    
+    for number in odd_numbers:
+        sum_odds += number
+    return sum_odds / len(odd_numbers)
+                    
 print(odd_average([1, 2, 3, 4, 5]))
