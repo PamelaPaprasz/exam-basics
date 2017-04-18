@@ -22,10 +22,10 @@ def inputs():
         print('File not found.')
             
 def copy_paste():
-    with open(sys.argv[2]) as f:
-        with open(sys.argv[3]) as f1:
-            for line in f:
-                f1.write(line)
+    with open(sys.argv[2]) as file_from:
+        with open(sys.argv[3]) as file_to:
+            for line in file_from:
+                file_to.write(line)
             
 inputs()
             
