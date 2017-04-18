@@ -36,13 +36,13 @@ The application is accepted if:
 
 #### Your answer:
 [add your answer here]   
-1:   
-2:   
-3:   
-4:   
-5:   
-6:   
-7:   
+1:   this is the keyword that defines the method
+2:   name of the method
+3:   argument of the method
+4:   the algorithm that the method supposed to do
+5:   variable
+6:   return sets variables to be a value from a function
+7:   return value
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
