@@ -6,3 +6,21 @@
 # No destination provided
 # When both arguments provided and the source is a file
 # Read all contents from it and write it to the destination
+
+import sys
+
+def inputs():
+    if len(sys.argv) == 1:
+        print('copy [source] [destination]')
+    elif len(sys.argv) == 2:
+        print('No destination provided')
+    else:
+        pass
+        
+        
+def copy_paste():
+    original_file = open(sys.argv[2])
+
+inputs()
+            
+
